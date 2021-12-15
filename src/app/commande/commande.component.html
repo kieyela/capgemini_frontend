@@ -1,0 +1,25 @@
+<p>commande works!</p>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Stock</th>
+        <th>Date</th>
+        <th>Quantite</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor =" let commande of commandes">
+            <td>{{commande.Id}}</td>
+            <td>{{commande.stock}}</td>
+            <td>{{commande.date}}</td>
+            <td>{{commande.quantite}}</td>
+            <td>{{commande.price}}</td>
+
+            <td><button type="button" class="btn btn-primary">Ajout</button></td>
+            <td><button type="button" class="btn btn-danger">delete</button></td>
+    </tr>
+      
+    
+</table>
+

@@ -1,0 +1,27 @@
+<p>piece works!</p>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Piece</th>
+        <th>Stock</th>
+        <th>Treshold</th>
+        <th>Lastorder</th>
+        <th>Prix</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor =" let piece of pieces">
+            <td>{{piece.Id}}</td>
+            <td>{{piece.piece}}</td>
+            <td>{{piece.stock}}</td>
+            <td>{{piece.treshold}}</td>
+            <td>{{piece.lastorder}}</td>
+            <td>{{piece.price}}</td>
+            <td><button type="button" class="btn btn-primary">Ajout</button></td>
+            <td><button type="button" class="btn btn-danger">delete</button></td>
+    </tr>
+      
+    
+</table>
+
+

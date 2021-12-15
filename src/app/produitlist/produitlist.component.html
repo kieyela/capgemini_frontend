@@ -1,0 +1,20 @@
+<p>produitlist works!</p>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>title</th>
+        <th>prix</th>
+        <th>quantite</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor =" let produit of produitlist">
+            <td>{{produit.Id}}</td>
+            <td>{{produit.title}}</td>
+            <td>{{produit.prix}}</td>
+            <td>{{produit.quantite}}</td>
+            <td><button type="button" class="btn btn-primary">Ajout</button></td>
+            <td><button type="button" class="btn btn-danger">delete</button></td>
+    </tr>
+      
+    
+</table>
